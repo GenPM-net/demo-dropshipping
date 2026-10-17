@@ -15,7 +15,7 @@ Every module ships an `AGENTS.md`, so your AI agent (Claude Code, Cursor, Copilo
 
 📘 **Step-by-step guide:** [online](docs/MANUAL.md) · [PDF](docs/dropshipping-guide.pdf)
 
-![Lumio home page](docs/screens/home.jpg)
+![Walkthrough: store, product landing and cart](docs/demo.gif)
 
 | Product landing (`/p/sunset-lamp`) | Admin: profit, suppliers, margins |
 |---|---|
