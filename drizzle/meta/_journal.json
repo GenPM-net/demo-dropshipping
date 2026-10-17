@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792195813275,
+      "tag": "0000_bright_sleeper",
+      "breakpoints": true
+    }
+  ]
+}
