@@ -1,0 +1,47 @@
+/* Identidad de Lumio (tienda ficticia de la demo): limpia, moderna y siempre en claro, sobre los tokens de @core/ui. */
+:root,
+:root[data-theme="light"] {
+  --ui-bg: #f7f7fb;
+  --ui-surface: #ffffff;
+  --ui-text: #14121f;
+  --ui-muted: #5d5a70;
+  --ui-border: #e4e2ee;
+  --ui-primary: #6d3df5;
+  --ui-primary-text: #ffffff;
+  --ui-radius: 16px;
+  --ui-font: "Avenir Next", "Helvetica Neue", system-ui, sans-serif;
+  color-scheme: light;
+}
+body.ui-root { background: var(--ui-bg); color: var(--ui-text); }
+h1, h2, h3, .blk-hero__title { letter-spacing: -0.02em; }
+header.site-chrome {
+  position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 2rem;
+  padding: 1rem max(1.5rem, calc((100vw - 72rem) / 2)); background: rgb(247 247 251 / 0.9); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ui-border);
+}
+header.site-chrome > a:first-child { font-size: 1.5rem; font-weight: 800; color: var(--ui-text); text-decoration: none; margin-right: auto; }
+header.site-chrome > a:first-child::before { content: "✦ "; color: var(--ui-primary); }
+.site-chrome nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+.site-chrome nav a { color: var(--ui-text); text-decoration: none; font-weight: 600; }
+.site-chrome nav a:hover { color: var(--ui-primary); }
+footer.site-chrome { margin-top: 5rem; padding: 3rem max(1.5rem, calc((100vw - 72rem) / 2)); background: #14121f; color: #e9e6f7; }
+footer.site-chrome nav a, footer.site-chrome a, footer.site-chrome button { color: #e9e6f7; }
+footer.site-chrome .site-info { margin-top: 1.25rem; color: #b4afcc; font-size: 0.95rem; }
+.blk-hero { padding-block: clamp(1.5rem, 5vw, 5rem); }
+.blk-hero__image { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; box-shadow: 0 30px 60px -30px rgb(20 18 31 / 0.5); }
+.ui-button--primary { box-shadow: 0 10px 24px -12px var(--ui-primary); }
+/* @core/blocks 1.0.1: la <section> comparte clase con la lista (galería/cifras). */
+section.blk-gallery, section.blk-stats { display: block; }
+ul.blk-gallery { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+dl.blk-stats { max-width: none; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1.5rem; }
+.blk-cta { text-align: center; }
+.blk-cta .blk__actions { justify-content: center; }
+[id^="form-"], .ui-alert { scroll-margin-top: 6rem; }
+/* Banner de cookies (@core/consent viene sin estilos): tarjeta fija abajo, "Rechazar" y "Aceptar" con el mismo peso. */
+.consent-banner { position: fixed; z-index: 50; left: 1rem; right: 1rem; bottom: 1rem; max-width: 34rem; margin-left: auto;
+  background: var(--ui-surface); color: var(--ui-text); border: 1px solid var(--ui-border); border-radius: 18px; padding: 1.25rem 1.5rem;
+  box-shadow: 0 20px 50px -20px rgb(20 18 31 / 0.35); font-size: 0.95rem; }
+.consent-banner h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+.consent-actions { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+.consent-button { flex: 1; padding: 0.6rem 1rem; border-radius: 999px; border: 1px solid var(--ui-text); background: var(--ui-surface); color: var(--ui-text); font-weight: 700; cursor: pointer; }
+.consent-settings-link { background: none; border: 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; padding: 0; }
