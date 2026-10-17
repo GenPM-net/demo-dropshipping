@@ -13,6 +13,8 @@ Every module ships an `AGENTS.md`, so your AI agent (Claude Code, Cursor, Copilo
 
 > Fictional store. Product photos from [Unsplash](https://unsplash.com) (Unsplash License). [Español abajo](#español).
 
+📘 **Step-by-step guide:** [online](docs/MANUAL.md) · [PDF](docs/dropshipping-guide.pdf)
+
 ![Lumio home page](docs/screens/home.jpg)
 
 | Product landing (`/p/sunset-lamp`) | Admin: profit, suppliers, margins |
