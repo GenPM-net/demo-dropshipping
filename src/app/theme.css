@@ -30,10 +30,7 @@ footer.site-chrome .site-info { margin-top: 1.25rem; color: #b4afcc; font-size: 
 .blk-hero { padding-block: clamp(1.5rem, 5vw, 5rem); }
 .blk-hero__image { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; box-shadow: 0 30px 60px -30px rgb(20 18 31 / 0.5); }
 .ui-button--primary { box-shadow: 0 10px 24px -12px var(--ui-primary); }
-/* @core/blocks 1.0.1: la <section> comparte clase con la lista (galería/cifras). */
-section.blk-gallery, section.blk-stats { display: block; }
-ul.blk-gallery { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
-dl.blk-stats { max-width: none; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1.5rem; }
+.blk-gallery__list { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
 .blk-cta { text-align: center; }
 .blk-cta .blk__actions { justify-content: center; }
 [id^="form-"], .ui-alert { scroll-margin-top: 6rem; }
